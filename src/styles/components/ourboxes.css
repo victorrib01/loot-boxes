@@ -1,0 +1,29 @@
+#our-vloots {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    padding-top: 20px;
+
+    background: #c4c4c4;
+    width: 100vw;
+}
+
+.vloots-menu {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.vloots-menu div button {
+    border-radius: 20px;
+    width: 10vw;
+    height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}

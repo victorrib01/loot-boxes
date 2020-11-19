@@ -1,0 +1,64 @@
+.box-details {
+    display: grid;
+
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+
+    justify-items: center;
+
+    height: 100vh;
+
+    margin: 2rem 0;
+}
+.box-details img{
+    height: 100%;
+    width:100%;
+    z-index: 99
+}
+
+.box-details p {
+    text-align: justify;
+    margin: 15px 150px;
+
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.box-details h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.box-details #price {
+    margin: 20px;
+
+    font-size: 64px;
+}
+
+.box-details button {
+    width: 1000px;
+    height: 200px;
+
+    border-radius: 120px;
+
+    font-size: 72px;
+
+    font-weight: bolder;
+
+    outline: none;
+    cursor: pointer;
+
+    transition: border-radius 0.2s
+}
+
+.box-details button:hover{
+    background: black;
+    color: white;
+
+    border-radius: 50px;
+
+}
+
+.box-logo {
+    justify-self: center;
+}

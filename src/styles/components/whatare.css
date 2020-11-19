@@ -1,0 +1,16 @@
+#what-are {
+    text-align: center;
+    text-size-adjust: auto;
+    width: 95vw;
+    justify-self: center;
+    padding: 2rem;
+}
+
+#what-are p {
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+#what-are .text-bar {
+    padding-bottom: 20px
+}

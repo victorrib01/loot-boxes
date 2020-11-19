@@ -1,0 +1,13 @@
+.logo{
+    display: flex;
+
+    flex-direction: row;
+
+align-items: center;
+margin-left: 20px;
+    
+}
+.logo img {
+    text-decoration: none;
+    color: black;
+}

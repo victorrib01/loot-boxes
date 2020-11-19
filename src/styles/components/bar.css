@@ -1,0 +1,25 @@
+.text-bar{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-area: d;
+}
+
+#bar{
+    border: 1px solid black;
+    height: 1px;
+    width: 100px;
+
+    border-radius: 50%;
+}
+
+#dot {
+    background: black;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+
+    margin: 0 30px;
+}

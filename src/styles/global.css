@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    color: #000000;
+    background: #FFFFFF;
+    overflow-x: hidden;
+
+    height: 100%;
+
+    line-height: 46px;
+    letter-spacing: 1.2px;
+}
+
+body, input, button, textarea {
+    font: 600 18px Nunito, sans-serif;
+}
+
+a, li{
+    text-decoration: none;
+    color: black;
+}
