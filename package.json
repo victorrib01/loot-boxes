@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react": "^16.9.55",
+    "@types/react-slick": "^0.23.4",
     "@types/react-dom": "^16.9.9",
     "@types/react-router-dom": "^5.1.6",
     "axios": "^0.21.0",
@@ -38,9 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react": "^16.9.55",
-    "@types/react-slick": "^0.23.4"
   }
 }
