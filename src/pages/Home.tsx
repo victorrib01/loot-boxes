@@ -15,14 +15,16 @@ function Home() {
     return (
         <>
             <Header />
-            <main>
-                <Carousel />
-                <OurBoxes />
-                <Boxes />
-                <WhatAre />
-                <HowItWorks />
-            </main>
-            <Footer />
+            <div className='main-container'>
+                <main>
+                    <Carousel />
+                    <OurBoxes />
+                    <Boxes />
+                    <WhatAre />
+                    <HowItWorks />
+                </main>
+                <Footer />
+            </div>
         </>
     );
 }

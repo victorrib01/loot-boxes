@@ -3,12 +3,12 @@ import React from 'react';
 import './styles/global.css'
 import './styles/App.css'
 
-import Routes from './routes';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <Routes />
+      <Home />
     </div>
   );
 }

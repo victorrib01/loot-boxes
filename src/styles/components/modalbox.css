@@ -11,9 +11,8 @@
     margin: 2rem 0;
 }
 .box-details img{
-    height: 100%;
-    width:100%;
-    z-index: 99
+    height: 285px;
+    width: 285px;
 }
 
 .box-details p {
@@ -48,7 +47,7 @@
     outline: none;
     cursor: pointer;
 
-    transition: border-radius 0.2s
+    transition: border-radius 0.2s;
 }
 
 .box-details button:hover{

@@ -7,25 +7,25 @@ import '../styles/components/carousel.css';
 
 interface BoxesInterface {
     id: number
+    active: boolean;
     name: string;
     description: string;
     price: number;
-    active: boolean;
-    images: [
-        {
-            path: string,
-            active: string,
-            type: string,
-        }
-    ];
-    buttons: [
+    banner:{
+        id: number,
+        name: string,
+        url: string
+    },
+    boxbuttons:[
         {
             id: number,
             title: string,
-            text: string,
             active: boolean,
-            type: string,
-            image: string
+            image: {
+                id: number,
+                name: string,
+                url: string
+            }
         }
     ]
 }
@@ -63,11 +63,11 @@ function Carousel() {
                         <div id="carousel" key={carousel.id} >
                             <h1>VLoot {carousel.name}</h1>
                             <div className="buttons">
-                                {carousel.buttons&&carousel.buttons.map(button => {
+                                {carousel.boxbuttons&&carousel.boxbuttons.map(button => {
                                     return (
                                         <div className="button" key={button.id}>
                                             <button>
-                                                <img src={button.image||buttonPlaceholder} alt={`button-${button.title}`} />
+                                                <img src={`http://0.0.0.0:1337${button.image.url}`||buttonPlaceholder} alt={`button-${button.title}`} />
                                             </button>
                                             <h2>{button.title}</h2>
                                         </div>
@@ -75,7 +75,7 @@ function Carousel() {
                                 })}
                             </div>
                             <div className="banner">
-                                <img src={carousel.images.find(img => img.type === 'banner' && img.active)?.path|| bannerPlaceholder} alt={carousel.name} />
+                                <img src={`http://0.0.0.0:1337${carousel.banner.url}`|| bannerPlaceholder} alt={carousel.name} />
                             </div>
                         </div>
                     )

@@ -8,7 +8,8 @@ import api from '../services/api';
 interface HIWInterface {
     id: number,
     active: boolean,
-    buttons: [
+    name: string,
+    hiw_buttons: [
         {
             id: number,
             title: string,
@@ -25,6 +26,7 @@ function HowItWorks() {
     async function loadHIW() {
         const response = await api.get('howitworks');
         setHiw(response.data)
+        console.log(response.data)
     }
 
     useEffect(() => {
@@ -38,7 +40,7 @@ function HowItWorks() {
             {active.map && active.map(howItWork => {
                 return(
                 <div className="cards" key={howItWork.id}>
-                    {howItWork.buttons.map(btn => {
+                    {howItWork.hiw_buttons.map(btn => {
                         return (
                             <div className="card" key={btn.id}>
                                 <h2>{btn.title}</h2>

@@ -17,13 +17,13 @@ function WhatAre() {
     const active = whatAre.filter(wa => wa.active === true);
 
     async function loadWhatAre() {
-        const response = await api.get('whatare');
+        const response = await api.get('whatares');
         setWhatAre(response.data)
     }
 
     useEffect(() => {
         loadWhatAre()
-    })
+    },[])
     
     return (
         <div id="what-are">

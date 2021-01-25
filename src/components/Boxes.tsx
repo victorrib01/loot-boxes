@@ -8,18 +8,40 @@ import api from '../services/api';
 
 interface BoxesInterface {
     id: number
+    active: boolean;
     name: string;
     description: string;
     price: number;
-    active: boolean;
-    box_image: string;
+    banner:{
+        id: number,
+        name: string,
+        url: string
+    },
+    box_image: {
+        id: number,
+        name: string,
+        url: string,
+    }
+    boxbuttons:[
+        {
+            id: number,
+            title: string,
+            active: boolean,
+            image: {
+                id: number,
+                name: string,
+                url: string
+            }
+        }
+    ]
 }
+
 
 function Boxes() {
     const [showModal, setShow] = useState(-1);
     const [box, setBox] = useState<BoxesInterface[]>([]);
     const active = box.filter( b => b.active === true)
-    const placeholder = 'https://via.placeholder.com/285.png'
+    const placeholder = 'https://via.placeholder.com/200.png'
 
     async function loadBoxes(){
         const response = await api.get('boxes');
@@ -36,12 +58,12 @@ function Boxes() {
                 return (
                     <div className="box" key={boxes.id}>
                         <h2>{boxes.name}</h2>
-                        <img src={boxes.box_image || placeholder} alt={boxes.name} />
+                        <img src={`http://0.0.0.0:1337${boxes.box_image.url}`|| placeholder} alt={boxes.name} />
                         <button onClick={(e) => setShow(boxes.id)}>VER MAIS</button>
                         <Modal onClose={(e: any) => setShow(-1)} active={showModal} id={boxes.id}>
                             <div className="box-details">
                                 <h1>VLoot {boxes.name}</h1>
-                                <img src={boxes.box_image || placeholder} alt="box" />
+                                <img src={`http://0.0.0.0:1337${boxes.box_image.url}` || placeholder} alt="box" />
                                 <h2>Descrição</h2>
                                 <p>
                                 {boxes.description}
