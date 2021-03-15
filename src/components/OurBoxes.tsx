@@ -6,18 +6,18 @@ import '../styles/components/ourboxes.css';
 
 function OurBoxes() {
     return (
-        <div id="our-vloots">
-            <div className="vloots-menu">
+        <div id="our-lootboxes">
+            <div className="lootboxes-menu">
                 {/* <div className="republicanos">
                     <button>REPUBLICANOS</button>
                 </div>
                 <div className="anarco">
                     <button>ANARCO</button>
                 </div> */}
-                <div className="text-ourvloots">
+                <div className="text-ourlootboxes">
                     <h1>NOSSOS</h1>
                     <Bar />
-                    <h1>VLOOTS</h1>
+                    <h1>LOOTBOXES</h1>
                 </div>
                 {/* <div className="liberal">
                     <button>LIBERAL</button>

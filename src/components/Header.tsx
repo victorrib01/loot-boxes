@@ -9,7 +9,7 @@ function Header() {
         <header>
             <Logo />
             <div id="menu" className="menu">
-                <a href="#carousel">Escolha seu VLoots</a>
+                <a href="#carousel">Escolha seu Loot Box</a>
                 <a href="#how-it-works">Como funciona?</a>
                 <a href="#what-is">O que são?</a>
             </div>

@@ -61,7 +61,7 @@ function Carousel() {
                 {active.map(carousel => {
                     return (
                         <div id="carousel" key={carousel.id} >
-                            <h1>VLoot {carousel.name}</h1>
+                            <h1>Loot Box {carousel.name}</h1>
                             <div className="buttons">
                                 {carousel.boxbuttons&&carousel.boxbuttons.map(button => {
                                     return (

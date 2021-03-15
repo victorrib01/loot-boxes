@@ -62,7 +62,7 @@ function Boxes() {
                         <button onClick={(e) => setShow(boxes.id)}>VER MAIS</button>
                         <Modal onClose={(e: any) => setShow(-1)} active={showModal} id={boxes.id}>
                             <div className="box-details">
-                                <h1>VLoot {boxes.name}</h1>
+                                <h1>Loot Box {boxes.name}</h1>
                                 <img src={`http://0.0.0.0:1337${boxes.box_image.url}` || placeholder} alt="box" />
                                 <h2>Descrição</h2>
                                 <p>

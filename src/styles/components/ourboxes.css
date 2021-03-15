@@ -1,4 +1,4 @@
-#our-vloots {
+#our-lootboxes {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
@@ -8,7 +8,7 @@
     width: 100%;
 }
 
-.vloots-menu {
+.lootboxes-menu {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
@@ -19,7 +19,7 @@
     width: 100%;
 }
 
-.vloots-menu div button {
+.lootboxes-menu div button {
     border-radius: 20px;
     width: 10%;
     height: 35px;

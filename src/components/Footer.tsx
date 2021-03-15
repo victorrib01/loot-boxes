@@ -12,7 +12,7 @@ function Footer() {
         <footer>
             <div className="footer-content">
                 <div className='menu-footer'>
-                    <a href="#carousel">Escolha seu VLoots</a>
+                    <a href="#carousel">Escolha seu Loot Box</a>
                     <a href="#how-it-works">Como funciona?</a>
                     <a href="#what-is">O que são?</a>
                 </div>

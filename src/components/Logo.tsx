@@ -13,7 +13,7 @@ function Logo() {
     return (
         <Link to="/" className="logo">
             <img src={logoData.image} alt="logo" />
-            <h1>VLoots</h1>
+            <h1>LootBoxes</h1>
         </Link>
     );
 }
